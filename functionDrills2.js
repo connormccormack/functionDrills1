@@ -40,12 +40,12 @@ function decode(word) {
   }
 }
 
-function decoder(sentence) {
+/*function decoder(sentence) {
   const words = sentence.split(' ');
   words.forEach((word) => {
     console.log(decode(word));
     });
-}
+} */
 
 
 // return decoded message
@@ -54,7 +54,56 @@ function decoder(sentence) {
 // const words = message.split(' ');
 
 
-decoder('craft block argon meter bells brown croon droop');
+// decoder('craft block argon meter bells brown croon droop');
 
 // const decodedWords = words.map;
 
+function daysInMonth(month, leapYear) {
+  switch (month) {
+  case 'january':
+    console.log('January has 31 days');
+    break;
+    
+  case 'february': 
+    if (leapYear === true) {
+      console.log('February has 29 days')
+    } else {
+    console.log('February has 28 days')
+    } break;
+    
+  case 'march':
+    console.log('March has 31 days');
+    break;
+    case 'april':
+      console.log('april has 3 days');
+      break;
+      case 'may':
+    console.log('may has 31 days');
+    break;
+    case 'june':
+    console.log('june has 30 days');
+    break;
+    case 'july':
+    console.log('july has 31 days');
+    break;
+    case 'august':
+    console.log('august has 31 days');
+    break;
+    case 'september':
+    console.log('March has 30 days');
+    break;
+    case 'october':
+    console.log('october has 31 days');
+    break;
+    case 'november':
+    console.log('November has 30 days');
+    break;
+    case 'december':
+    console.log('december has 31 days');
+    break;
+  
+  }
+
+}
+
+daysInMonth('december')

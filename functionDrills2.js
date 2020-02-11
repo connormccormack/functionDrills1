@@ -58,7 +58,7 @@ function decode(word) {
 
 // const decodedWords = words.map;
 
-function daysInMonth(month, leapYear) {
+function daysInMonth(month, leapYear = false) {
   switch (month) {
   case 'january':
     console.log('January has 31 days');
@@ -107,3 +107,42 @@ function daysInMonth(month, leapYear) {
 }
 
 daysInMonth('december')
+
+function rockPaperScissors(num) {
+  const randomNo = Math.floor(Math.random() * 3) + 1;
+  if ( num !== 1 || num !== 2 || num !== 3) {
+    throw new Error('Pick a number between 1 and 3');
+  }
+  if (randomNo === 1) {
+    if (num = 1) {
+      console.log('tie');
+    } else if (num = 2) {
+      console.log('player wins')
+    } else if (num = 3) {
+      console.log('computer wins')
+    }
+  } else if (randomNo === 2) {
+    if (num = 1) {
+      console.log('computer wins');
+    } else if (num = 2) {
+      console.log('tie')
+    } else if (num = 3) {
+      console.log('player wins')
+    }
+  } else if (randomNo === 3) {
+    if (num = 1) {
+      console.log('player wins');
+    } else if (num = 2) {
+      console.log('computer wins')
+    } else if (num = 3) {
+      console.log('tie')
+    }
+  }
+}
+
+try {
+rockPaperScissors(4);
+}
+catch(e) {
+  console.error(e.message);
+}

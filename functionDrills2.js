@@ -27,7 +27,6 @@ function beyond(num) {
 function decode(word) {
   // decode each word
   let firstLetter = word.charAt(0);
-  console.log(firstLetter);
   if (firstLetter === 'a') {
     return word.charAt(1);
   } else if (firstLetter === 'b') {
@@ -41,14 +40,21 @@ function decode(word) {
   }
 }
 
+function decoder(sentence) {
+  const words = sentence.split(' ');
+  words.forEach((word) => {
+    console.log(decode(word));
+    });
+}
+
+
 // return decoded message
 
-const message = 'craft block argon meter bells brown croon droop';
-const words = message.split(' ');
+// const message = 'craft block argon meter bells brown croon droop';
+// const words = message.split(' ');
 
 
-// console.log(decode('craft block argon meter bells brown croon droop'));
+decoder('craft block argon meter bells brown croon droop');
 
 // const decodedWords = words.map;
 
-decode('argon');
